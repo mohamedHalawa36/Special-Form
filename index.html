@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mentor2.css">
+    <script src="js/main.js" defer></script>
+    <style></style>
+    <title>Mentor 2</title>
+
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="container">
+            <nav class="steps">
+                <div class="step" id="info">
+                    <span class="num">1</span>
+                    <div class="text-content">
+                        <span class="step-num">STEP 1</span>
+                        <span class="step-name">Your INFO</span>
+                    </div>
+                </div>
+
+
+                <div class="step" id="Plan-select">
+                    <span class="num">2</span>
+                    <div class="text-content">
+                        <span class="step-num">STEP 2</span>
+                        <span class="step-name">Select plan</span>
+                    </div>
+                </div>
+
+                <div class="step" id="ons">
+                    <span class="num">3</span>
+                    <div class="text-content">
+                        <span class="step-num">STEP 3</span>
+                        <span class="step-name">add-ons</span>
+                    </div>
+                </div>
+
+                <div class="step" id="Finishing-up">
+                    <span class="num">4</span>
+                    <div class="text-content">
+                        <span class="step-num">STEP 4</span>
+                        <span class="step-name">summary</span>
+                    </div>
+                </div>
+            </nav>
+            <div id="infos" class="section active" data-step="step-1">
+                <div class="section-details">
+                    <h1 class="section-title">Personal info</h1>
+                    <p class="section-discription">Please provide your name ,email address, and phone number.</p>
+                </div>
+                <form action="">
+                    <div class="input">
+                        <input type="text" id="name">
+                        <label for="name" class="title">Name</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email">
+                        <label for="emain" class="title">Email Address</label>
+                    </div>
+
+
+                    <div id="phone-input" class="input">
+                        <label for="phone" class="title">Phone Number</label>
+                        <input type="number" id="phone">
+                    </div>
+                </form>
+                <div class="buttons-container">
+                    <span class="next-step" data-section="infos">Next Step</span>
+                </div>
+            </div>
+            <div id="plan" class="section" data-step="2">
+                <div class="section-details">
+                    <h1 class="section-title">select your plan</h1>
+                    <p class="section-discription">You have the option of monthly or yearly billing</p>
+                </div>
+                <div class="plans">
+                    <div class="plans-types">
+                        <div id="arcade" class="plan-type selected" data-price="9" data-period="mo">
+                            <img src="images/icon-arcade.svg" alt="Arcade">
+                            <div class="text-content">
+                                <h4 class="plan-title">Arcade</h4>
+                                <span class="plan-price"></span>
+                                <span class="year-bonus"></span>
+                            </div>
+                        </div>
+
+                        <div id="advanced" class="plan-type" data-price="12" data-period="mo">
+                            <img src="images/icon-advanced.svg" alt="Arcade">
+                            <div class="text-content">
+                                <h4 class="plan-title">Advance</h4>
+                                <span class="plan-price"></span>
+                                <span class="year-bonus"></span>
+                            </div>
+                        </div>
+
+                        <div id="pro" class="plan-type" data-price="15" data-period="mo">
+                            <img src="images/icon-pro.svg" alt="Arcade">
+                            <div class="text-content">
+                                <h4 class="plan-title">Pro</h4>
+                                <span class="plan-price"></span>
+                                <span class="year-bonus"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-period">
+                    <span id="monthly" class="period ">Monthly</span>
+                    <span class="period-selection"> <span class="ball"></span> </span>
+                    <span id="yearly" class="period selected">yearly</span>
+                </div>
+                <div class="buttons-container">
+                    <span class="next-step" data-section="plans">Next Step</span>
+                </div>
+            </div>
+
+            <div id="add-ons" class="section">
+                <div class="section-details">
+                    <h1 class="section-title">Pick add-ons</h1>
+                    <p class="section-discription">Add-ons help enhance your gaming experience</p>
+                </div>
+                <div class="adds">
+                    <div class="add" id="onlineService">
+                        <div class="service">
+                            <div class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkbox"> <span class="check-mark">&#10004</span> </span>
+                            </div>
+
+                            <div class="text-content">
+                                <h4>online service</h4>
+                                <p class="add-discription">Access to multiplayer games</p>
+                            </div>
+                        </div>
+                        <span class="add-price"></span>
+                    </div>
+
+                    <div class="add" id="largerStorage">
+                        <div class="service">
+                            <div class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkbox"> <span class="check-mark">&#10004</span> </span>
+                            </div>
+
+                            <div class="text-content">
+                                <h4>Larger storage</h4>
+                                <p class="add-discription">Extra 1TB of cloud save</p>
+                            </div>
+                        </div>
+                        <span class="add-price"></span>
+                    </div>
+                    <div class="add" id="customizedProfile">
+                        <div class="service">
+                            <div class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkbox"> <span class="check-mark">&#10004</span> </span>
+                            </div>
+
+                            <div class="text-content">
+                                <h4>Customizable profile</h4>
+                                <p class="add-discription">custo, theme on your profile</p>
+                            </div>
+                        </div>
+                        <span class="add-price"></span>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <span class="next-step" data-section="summary">Next Step</span>
+                </div>
+            </div>
+            <div id="summary" class="section">
+                <div class="section-details">
+                    <h1 class="section-title">Finishing up</h1>
+                    <p class="section-discription">Double-check everything looks OK before confirming</p>
+                </div>
+                <div class="bills">
+                    <div class="plan-bill">
+                        <div class="text-content">
+                            <h4 class="selected-plan"></h4>
+                            <a class="change-plan">Change</a>
+                        </div>
+                        <span class="plan-bill-price cost"></span>
+                    </div>
+                    <hr>
+                    <div class="addOns-bill">
+
+                    </div>
+                </div>
+                <div class="total-cost">
+                    <span class="total-text"></span>
+                    <h4 class="total-price cost"></h4>
+                </div>
+                <div class="buttons-container">
+                    <span class="confirm">Confirm</span>
+                </div>
+            </div>
+            <div id="complete" class="section">
+                <div class="finishing-up">
+                    <img src="images/icon-thank-you.svg"></img>
+                    <h1>Thank you</h1>
+                    <p>Thanks for confirming your subscription! we hope you have fun using our platform. if you ever
+                        need any support, please feel free to email us at support@loremgaming.com.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

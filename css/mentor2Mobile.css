@@ -1,0 +1,104 @@
+    .form {
+      background-color: var(--Magnolia);
+      padding: 0;
+    }
+    .form .section-details {
+      margin-bottom: 40px;
+    }
+    .form .section-details .section-title {
+      margin: 10px 0px;
+      margin-top: 0;
+      font-size: 25px;
+    }
+    .form .container {
+      display: block;
+      height: auto;
+      flex-direction: column;
+      min-width: 100%;
+      background-color: var(--Magnolia);
+      padding: 0;
+      border-radius: 0;
+      gap: 0;
+      left: 0;
+      top: 0;
+      position: relative;
+      transform: none;
+    }
+    .form .container .steps {
+      background-image: url(../images/bg-sidebar-mobile.svg);
+      flex-direction: row;
+      height: 172px;
+      background-position: bottom;
+      width: 100%;
+      background-size: cover;
+      border-radius: 0;
+      justify-content: center;
+      z-index: 0;
+      align-items: flex-start;
+    }
+    .form .container .steps .step .text-content {
+      display: none;
+    }
+    .form .section {
+      max-width: var(--sectionMobileWidth);
+      background-color: var(--White);
+      margin: -86px auto;
+      z-index: 1;
+      padding: 40px 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+    }
+    .form .section .buttons-container {
+      position: static;
+      padding: 20px;
+      bottom: 0;
+      transform: translateY(calc(20px));
+      right: 0px;
+      background-color: var(--White);
+    }
+    .form .section .next-step, .form .section .buttons-container .confirm, .form .buttons-container .section .confirm {
+      bottom: -20px;
+      border-radius: 5px;
+    }
+    .form .section .go-back {
+      bottom: -20px;
+      padding: 12px 20px;
+    }
+    .form #plan .plans-types {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .form #plan .plans-types .plan-type {
+      flex-direction: row;
+      width: 100%;
+      padding: 15px;
+    }
+    .form #add-ons .adds .add {
+      width: 100%;
+      padding: 15px;
+    }
+    .form #add-ons .adds .add .add-prive {
+      font-size: 14px;
+    }
+    .form #add-ons .adds .add .service .text-content h4 {
+      font-size: 15px;
+    }
+    .form #add-ons .adds .add .service .text-content p {
+      font-size: 14px;
+    }
+    .form #summary .bills {
+      width: 100%;
+    }
+    .form #complete {
+      min-width: auto;
+      min-height: 400px;
+    }
+    .form #complete .finishing-up {
+      width: auto;
+      position: static;
+      transform: none;
+      height: 100%;
+    }
+  
+    
+/*# sourceMappingURL=mentor2Mobile.css.map */
